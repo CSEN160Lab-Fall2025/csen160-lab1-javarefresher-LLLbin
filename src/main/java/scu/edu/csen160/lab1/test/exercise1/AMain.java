@@ -5,8 +5,12 @@ public class AMain {
         // Edit the code, so that the age (in years) of the puppy is printed from main.
         // Edit the code, so that the age (in days) is printed from main.
         Puppy myPuppy = new Puppy("Fido",2);
-        myPuppy.getName();
+        String puppyName = myPuppy.getName();
+        int ageInYears   = myPuppy.getAge();
+        int ageInDays = myPuppy.getAge() * 365;
 
-        System.out.printf("Hello and welcome!");
+        System.out.printf(
+            "Puppy's name: %s, age in years: %d, age in days: %d", puppyName, ageInYears, ageInDays
+        );
     }
 }
